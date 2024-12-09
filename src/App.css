@@ -1,0 +1,191 @@
+@font-face {
+  font-family: nik-Logo;
+  src: url(./assets/AnadaBlack.ttf);
+}
+@font-face {
+  font-family: "Nikhil-poppins", "md";
+  src: url(./assets/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Nikhil-poppins", "Regular";
+  src: url(./assets/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Nikhil-poppins", "semiBold";
+  src: url(./assets/Poppins-SemiBold.ttf);
+}
+* {
+  font-style: normal;
+  font-family: "Poppins", serif;
+  user-select: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.logo {
+  font-family: nik-Logo;
+}
+.nik-pop-md {
+  font-family: "Nikhil-poppins", "md";
+}
+.nik-pop-r {
+  font-family: "Nikhil-poppins", "Regular";
+}
+.nik-pop-sb {
+  font-family: "Nikhil-poppins", "semiBold";
+}
+
+.l_cir {
+  position: relative;
+  overflow: hidden;
+}
+
+.l_cir::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    transparent 30%,
+    rgb(14 165 233),
+    rgb(99 102 241),
+    rgb(99 102 241)
+  );
+  z-index: 0;
+  animation: rot 1s ease-in-out infinite;
+  transform-origin: bottom right;
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.l_cir::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(
+    -145deg,
+    transparent,
+    transparent 30%,
+    rgb(14 165 233),
+    rgb(99 102 241),
+    rgb(99 102 241)
+  );
+  z-index: 0;
+  animation: rot 1s ease-in-out infinite;
+  transform-origin: top left;
+}
+
+.typ {
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1px;
+}
+
+.typ::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: 0;
+  height: 25px;
+  width: 1.5px;
+  border-radius: 50px;
+  animation: typed 1s ease-in-out infinite;
+}
+
+@keyframes typed {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.autoshow {
+  animation: autoshowAnimation;
+  animation-timeline: view(70% 0%);
+}
+@keyframes autoshowAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+    filter: blur(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0) scale(1);
+    filter: blur(0);
+  }
+}
+.amd-send-icons-p{
+  position: relative;
+  perspective: 100px;
+
+  transition: .3s ease-in-out;
+}
+.amd-send-icons-p p{
+  transition: .3s ease-in-out;
+}
+.amd-send-icons-p:hover{
+  transform: skew(20deg) rotate(-30deg) ;
+}
+.amd-send-icons-p:hover p{
+  transform: translateX(10px) ;
+}
+
+
+.animation_l{
+  animation: moveLeft 2s ease-in-out infinite;
+}
+.animation_r{
+  animation: moveRight 2s ease-in-out infinite;
+}
+@keyframes moveLeft {
+  to{
+    left: 40px;
+  }
+}
+@keyframes moveRight {
+  to{
+    right: 40px;
+  }
+}
+.rotate-sun{
+  perspective: 100px;
+  animation: roatate 3s ease-in-out infinite;
+}
+@keyframes roatate {
+to{
+    transform: skewX(30deg) rotate(360deg) ;
+  }
+}
+.per{
+  perspective: 1000px;
+  transform: skewX(30deg);
+  animation: roatate 3s ease-in-out infinite;
+}
+.per div{
+ 
+  transform: skewX(-30deg);
+}
