@@ -24,7 +24,8 @@ const Home = () => {
         <Navbar />
       </div>
       <section className="w-[98%] h-[87vh] lg:overflow-y-hidden ">
-        <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl my-3 lg:my-0  mx-auto     ">
+        <Routes>
+          <Route path="/" element={  <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl my-3 lg:my-0  mx-auto     ">
           <div className="flex items-center md:items-center  justify-between gap-12 flex-col lg:flex-row lg:gap-0 relative">
             <div className="h-60 w-60 md:h-64 md:w-64 lg:w-80 lg:h-80  l_cir border-transparent  rounded-full flex items-center justify-center z-0">
               <img
@@ -74,10 +75,20 @@ const Home = () => {
                       knikhil07k@gmail.com
                     </a>
                   </button>
+                  <button className="flex items-center gap-4 pl-1">
+                    <img
+                      src="src\assets\Gitub-icon.png"
+                      alt=""
+                      className="w-6"
+                    />
+                    <a href="https://github.com/knikhil07" target="_blank" className="text-slate-50">
+                     GITHUB
+                    </a>
+                  </button>
                 </div>
                 <div className="text-slate-50 flex-wrap py-2 w-[96%]  md:max-w-xl flex flex-col items-center gap-6 h-auto pb-36 mb-6 text-[12px] sm:text-base ">
                   <span className="autoshow w-full ">
-                    <p className="font-bold flex flex-wrap items-center ">
+                    <p className="font-bold flex flex-wrap items-center mb-4">
                       ✨ Aspiring Full stack Web Developer | B.Tech Student <span className="ml-2 after:animate-ping relative after:absolute  after:w-2 after:h-2 flex items-center justify-center after:rounded-full after:bg-green-500 w-2 h-2 rounded-full bg-green-500"></span> |  Passionate about  creating robust, scalable, and user-friendly web applications and  Crafting Intuitive User Experiences
                     </p>
                     Hello! I'm a first-year B.Tech student driven by a
@@ -187,7 +198,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div>}   />
+        </Routes>
+      
       </section>
     </div>
   );
