@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Navbar from "./componets/Navbar";
 import { useTypewriter } from "react-simple-typewriter";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import AppContext from "./context/AppContext";
 import Projects from "./pages/Projects";
 import { icons } from "./assets/assests";
@@ -28,7 +28,7 @@ const Home = () => {
         <Navbar />
       </div>
       <section className="w-[98%] h-[87vh] lg:overflow-y-hidden ">
-        <HashRouter>
+      
           <Routes>
           
            <Route
@@ -255,7 +255,7 @@ const Home = () => {
           <Route path="/projects" element={<Projects/>} /> 
        
         </Routes>
-        </HashRouter>
+ 
         
       </section>
     </div>
