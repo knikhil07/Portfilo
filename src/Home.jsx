@@ -4,6 +4,7 @@ import { useTypewriter } from "react-simple-typewriter";
 import { Route, Routes } from "react-router-dom";
 import AppContext from "./context/AppContext";
 import Projects from "./pages/Projects";
+import { icons } from "./assets/assests";
 
 const Home = () => {
   const { isChat } = useContext(AppContext);
@@ -31,12 +32,13 @@ const Home = () => {
           
            <Route
             path="/"
+            
             element={
               <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl my-3 lg:my-0  mx-auto     ">
                 <div className="flex items-center md:items-center  justify-between gap-12 flex-col lg:flex-row lg:gap-0 relative">
                   <div className="h-60 w-60 md:h-64 md:w-64 lg:w-80 lg:h-80  l_cir border-transparent  rounded-full flex items-center justify-center z-0">
                     <img
-                      src="src\assets\Profile.jpg"
+                      src={icons.icon_hero}
                       className="h-[95%] w-[95%] rounded-full z-[2] "
                       alt=""
                     />
@@ -60,7 +62,7 @@ const Home = () => {
                       <div className="flex py-2 items-start gap-3 flex-col">
                         <button className="flex items-center gap-3">
                           <img
-                            src="src\assets\linked-icon.png"
+                            src={icons.linkedin}
                             alt=""
                             className="w-8"
                           />
@@ -74,7 +76,7 @@ const Home = () => {
                         </button>
                         <button className="flex items-center gap-4 pl-1">
                           <img
-                            src="src\assets\gmail-icon-google-gmail.png"
+                            src={icons.gmail}
                             alt=""
                             className="w-6"
                           />
@@ -84,7 +86,7 @@ const Home = () => {
                         </button>
                         <button className="flex items-center gap-4 pl-1">
                           <img
-                            src="src\assets\Gitub-icon.png"
+                            src={icons.github_icon}
                             alt=""
                             className="w-6"
                           />
@@ -249,7 +251,7 @@ const Home = () => {
             }
           />
          
-          <Route path="/Projects" element={<Projects/>} /> 
+          <Route path="/projects" element={<Projects/>} /> 
        
         </Routes>
       </section>

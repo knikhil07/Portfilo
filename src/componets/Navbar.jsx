@@ -3,9 +3,11 @@ import { CiMenuKebab } from "react-icons/ci";
 import AppContext from "../context/AppContext";
 import { IoMdClose } from "react-icons/io";
 import { BiSolidSend } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { isNavMenu, setNavMenu ,setChat} = useContext(AppContext);
+  const nav = useNavigate();
   return (
     <>
       <div className="z-40 py-4 md:py-6  w-full sticky  top-0 right-0 ">
@@ -37,29 +39,29 @@ const Navbar = () => {
                   </button>
                   <ul className="space-y-6 ">
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <a href="/" className="">
+                      <span    onClick={()=>{nav("/")}} className="">
                         Home
-                      </a>
+                      </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <a href="" className="">
+                      <span   onClick={()=>{nav("/")}} className="">
                         About
-                      </a>
+                      </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <a href="" className="">
+                      <span   onClick={()=>{nav("/")}}  className="">
                         Skills
-                      </a>
+                      </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <a href="/projects" className="">
+                      <span    onClick={()=>{nav("/projects")}} className="">
                         Projects
-                      </a>
+                      </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <a href="" className="">
+                      <span   className="">
                         Blog
-                      </a>
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -68,27 +70,27 @@ const Navbar = () => {
             <div className="">
               <ul className="space-x-8 hidden md:flex items-center justify-center border-r-2 px-4 mr-4 ">
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a href="" className="">
+                  <a  onClick={()=>{nav("/")}}  className="">
                     Home
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a href="" className="">
+                  <a  onClick={()=>{nav("/")}}  className="">
                     About
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a href="" className="">
+                  <a  onClick={()=>{nav("/")}}  className="">
                     Skills
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a href="" className="">
+                  <a  onClick={()=>{nav("/projects")}} className="">
                     Projects
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a href="" className="">
+                  <a  className="">
                     Blog
                   </a>
                 </li>
