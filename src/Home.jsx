@@ -28,7 +28,7 @@ const Home = () => {
       <div className=" ">
         <Navbar />
       </div>
-      <section className="w-[98%] h-[87vh] lg:overflow-y-hidden ">
+      <section className="w-[98%] h-[86vh] lg:overflow-y-hidden ">
         <Routes>
           <Route
             path="/"
@@ -212,6 +212,7 @@ const Home = () => {
                                   Developed a full-stack web application for
                                   online shopping.
                                 </span>
+                      
                                 <span>
                                   Includes features like product filtering, user
                                   authentication, and a shopping cart.
