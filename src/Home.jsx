@@ -5,7 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import AppContext from "./context/AppContext";
 import Projects from "./pages/Projects";
 import { icons } from "./assets/assests";
-import About from "./pages/About";
+import About from "./pages/Skills";
+import Skills from "./pages/Skills";
 
 const Home = () => {
   const { isChat } = useContext(AppContext);
@@ -156,9 +157,10 @@ const Home = () => {
                           </h1>
 
                           <div className="ml-8  grid space-y-6">
-                            <h1 className="text-slate-300 font-bold text-base autoshow">
-                              Using js libraries
-                            </h1>
+                            
+                            <h2 className="text-slate-300 text-base autoshow">
+                              Using Js libraries
+                            </h2>
                             <span className="autoshow w-full">
                               <p className="mb-3 font-semibold text-sky-500 flex  items-center gap-2 text-base ">
                                 1 . Portfolio Website{" "}
@@ -243,10 +245,10 @@ const Home = () => {
                                 </span>
                               </p>
                             </span>
-                            <h1 className="text-slate-300 font-bold text-base autoshow">
-                              Using C{" "}
-                            </h1>
-
+                            
+                              <h2 className="text-slate-300 font-bold text-base autoshow">
+                                Using C
+                              </h2>
                             <span className="autoshow w-full ">
                               <p className="mb-3 font-semibold text-sky-500  text-base">
                                 1 . Scientific calculator
@@ -275,7 +277,7 @@ const Home = () => {
           />
 
           <Route path="/projects" element={<Projects />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
         </Routes>
       </section>
     </div>

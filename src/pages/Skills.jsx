@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const Skills = () => {
   return (
     <>
       <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl my-3 lg:my-0  mx-auto min-h-full">
@@ -12,4 +12,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Skills;

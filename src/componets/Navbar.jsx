@@ -52,7 +52,7 @@ const Navbar = () => {
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
                       <span
                         onClick={() => {
-                          nav("/");
+                          nav("/skills");
                         }}
                         className=""
                       >
@@ -92,7 +92,7 @@ const Navbar = () => {
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
                   <a
                     onClick={() => {
-                      nav("/");
+                      nav("/skills");
                     }}
                     className=""
                   >

@@ -10,8 +10,10 @@ const ProjectsPage = () => {
             <h2 className="logo text-2xl">Projects</h2>
           </div>
           <div className="ml-8 grid  space-y-6 text-slate-300 mt-10  pb-32">
-            <h1 className="text-slate-300 font-bold  ">Using js libraries</h1>
-
+            
+                <h2 className="text-slate-300 font-bold">
+                  Using Js libraries
+                </h2>
             <span className=" w-full">
               <p className="mb-3 font-semibold text-sky-500 flex   items-center gap-2 text-base ">
                 1 . Portfolio Website{" "}
@@ -86,8 +88,9 @@ const ProjectsPage = () => {
                 </span>
               </p>
             </span>
-            <h1 className="text-slate-300 font-bold text-base ">Using C </h1>
-
+          <h2 className="text-slate-300 font-bold text-base">
+                    Using c
+                  </h2>
             <span className=" w-full ">
               <p className="mb-3 font-semibold text-sky-500  text-base">
                 1 . Scientific calculator
