@@ -7,10 +7,8 @@ import { StrictMode } from "react";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-<BrowserRouter basename="/Portfilo/">
-  <App />
-</BrowserRouter>
-      
-    
+    <BrowserRouter basename="/Portfilo/">
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );

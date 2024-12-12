@@ -11,7 +11,7 @@ const Home = () => {
   const [typeEffect] = useTypewriter({
     words: [
       "Student ",
-      "Beggniner ",
+      "Begginer",
       "Programmer ",
       "Data scientist ",
       "Web dev",
@@ -28,12 +28,9 @@ const Home = () => {
         <Navbar />
       </div>
       <section className="w-[98%] h-[87vh] lg:overflow-y-hidden ">
-      
-          <Routes>
-          
-           <Route
+        <Routes>
+          <Route
             path="/"
-            
             element={
               <div className="max-w-sm sm:max-w-lg md:max-w-2xl lg:max-w-5xl my-3 lg:my-0  mx-auto     ">
                 <div className="flex items-center md:items-center  justify-between gap-12 flex-col lg:flex-row lg:gap-0 relative">
@@ -55,18 +52,14 @@ const Home = () => {
                       <span className=" font-extrabold text-4xl sm:text-5xl lg:text-8xl tracking-tight text-center  text-sky-500 animate-pulse">
                         I am Nikhil
                       </span>
-                      <p className="text-slate-50  text-sm sm:text-md md:text-lg lg:text-xl flex-wrap py-2  md:max-w-xl">
+                      <p className="text-slate-50  text-sm sm:text-md md:text-lg lg:text-xl flex-wrap py-2  md:max-w-xl pl-6 md:pl-0">
                         Building creative and functional digital experiences
                         with code and design. I transform ideas into reality
                         through innovation and dedication.
                       </p>
                       <div className="flex py-2 items-start gap-3 flex-col">
                         <button className="flex items-center gap-3">
-                          <img
-                            src={icons.linkedin}
-                            alt=""
-                            className="w-8"
-                          />
+                          <img src={icons.linkedin} alt="" className="w-8" />
                           <a
                             href="https://www.linkedin.com/in/katkurinikhil/"
                             target="_blank"
@@ -76,21 +69,13 @@ const Home = () => {
                           </a>
                         </button>
                         <button className="flex items-center gap-4 pl-1">
-                          <img
-                            src={icons.gmail}
-                            alt=""
-                            className="w-6"
-                          />
+                          <img src={icons.gmail} alt="" className="w-6" />
                           <a href="/" className="text-slate-50">
                             knikhil07k@gmail.com
                           </a>
                         </button>
                         <button className="flex items-center gap-4 pl-1">
-                          <img
-                            src={icons.github_icon}
-                            alt=""
-                            className="w-6"
-                          />
+                          <img src={icons.github_icon} alt="" className="w-6" />
                           <a
                             href="https://github.com/knikhil07"
                             target="_blank"
@@ -111,10 +96,11 @@ const Home = () => {
                             Intuitive User Experiences
                           </p>
                           Hello! I'm a first-year B.Tech student driven by a
-                          fascination with data science and its power to solve
-                          real-world problems. I enjoy exploring how data can
-                          unlock insights, tell compelling stories, and drive
-                          better decisions.
+                          fascination with Computer science and engineering (
+                          data science ) and its power to solve real-world
+                          problems. I enjoy exploring how data can unlock
+                          insights, tell compelling stories, and drive better
+                          decisions.
                         </span>
 
                         <span className="autoshow w-full">
@@ -155,6 +141,13 @@ const Home = () => {
                               ( learning )
                             </span>
                           </div>
+                          <div className="  flex gap-2 mx-8 text-slate-200">
+                            <p className="text-slate-50">Other Languages : </p>{" "}
+                            c{" "}
+                            <span className="animate-pulse text-yellow-500">
+                              ( learning )
+                            </span>
+                          </div>
                         </span>
                         <span className="">
                           <h1 className="autoshow w-full mb-5 font-semibold text-pink-500 text-xl">
@@ -162,6 +155,9 @@ const Home = () => {
                           </h1>
 
                           <div className="ml-8  grid space-y-6">
+                            <h1 className="text-red-500 font-bold text-base autoshow">
+                              Using js libraries
+                            </h1>
                             <span className="autoshow w-full">
                               <p className="mb-3 font-semibold text-sky-500 flex  items-center gap-2 text-base ">
                                 1 . Portfolio Website{" "}
@@ -182,6 +178,9 @@ const Home = () => {
                                 </span>
                               </p>
                             </span>
+                            <h1 className="text-red-500 font-bold text-base autoshow">
+                              Future work{" "}
+                            </h1>
                             <span className="autoshow w-full ">
                               <p className="mb-3 font-semibold text-sky-500  text-base">
                                 2 . Musify
@@ -242,6 +241,27 @@ const Home = () => {
                                 </span>
                               </p>
                             </span>
+                            <h1 className="text-red-500 font-bold text-base autoshow">
+                              Using C{" "}
+                            </h1>
+
+                            <span className="autoshow w-full ">
+                              <p className="mb-3 font-semibold text-sky-500  text-base">
+                                1 . Scientific calculator
+                              </p>
+                              <p className="ml-4 mt-2 grid space-y-1">
+                                <span>
+                                  {" "}
+                                  Developed a C programm to build a calculator
+                                  of mathematics
+                                </span>
+                                <span>
+                                  Includes features like basic caluclator
+                                  Matrices .
+                                </span>
+                                <span>This my first project in c</span>
+                              </p>
+                            </span>
                           </div>
                         </span>
                       </div>
@@ -251,12 +271,9 @@ const Home = () => {
               </div>
             }
           />
-         
-          <Route path="/projects" element={<Projects/>} /> 
-       
+
+          <Route path="/projects" element={<Projects />} />
         </Routes>
- 
-        
       </section>
     </div>
   );
