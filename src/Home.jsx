@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import AppContext from "./context/AppContext";
 import Projects from "./pages/Projects";
 import { icons } from "./assets/assests";
+import About from "./pages/About";
 
 const Home = () => {
   const { isChat } = useContext(AppContext);
@@ -273,6 +274,7 @@ const Home = () => {
           />
 
           <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </section>
     </div>

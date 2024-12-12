@@ -6,7 +6,7 @@ import { BiSolidSend } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const { isNavMenu, setNavMenu ,setChat} = useContext(AppContext);
+  const { isNavMenu, setNavMenu, setChat } = useContext(AppContext);
   const nav = useNavigate();
   return (
     <>
@@ -39,29 +39,38 @@ const Navbar = () => {
                   </button>
                   <ul className="space-y-6 ">
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span    onClick={()=>{nav("/")}} className="">
+                      <span
+                        onClick={() => {
+                          nav("/");
+                        }}
+                        className=""
+                      >
                         Home
                       </span>
                     </li>
+
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span   onClick={()=>{nav("/")}} className="">
-                        About
-                      </span>
-                    </li>
-                    <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span   onClick={()=>{nav("/")}}  className="">
+                      <span
+                        onClick={() => {
+                          nav("/");
+                        }}
+                        className=""
+                      >
                         Skills
                       </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span    onClick={()=>{nav("/projects")}} className="">
+                      <span
+                        onClick={() => {
+                          nav("/projects");
+                        }}
+                        className=""
+                      >
                         Projects
                       </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span   className="">
-                        Blog
-                      </span>
+                      <span className="">Blog</span>
                     </li>
                   </ul>
                 </div>
@@ -70,33 +79,51 @@ const Navbar = () => {
             <div className="">
               <ul className="space-x-8 hidden md:flex items-center justify-center border-r-2 px-4 mr-4 ">
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a  onClick={()=>{nav("/")}}  className="">
+                  <a
+                    onClick={() => {
+                      nav("/");
+                    }}
+                    className=""
+                  >
                     Home
                   </a>
                 </li>
+
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a  onClick={()=>{nav("/")}}  className="">
-                    About
-                  </a>
-                </li>
-                <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a  onClick={()=>{nav("/")}}  className="">
+                  <a
+                    onClick={() => {
+                      nav("/");
+                    }}
+                    className=""
+                  >
                     Skills
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a  onClick={()=>{nav("/projects")}} className="">
+                  <a
+                    onClick={() => {
+                      nav("/projects");
+                    }}
+                    className=""
+                  >
                     Projects
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a  className="">
-                    Blog
-                  </a>
+                  <a className="">Blog</a>
                 </li>
               </ul>
             </div>
-            <button onClick={()=>{setChat(true)}} className="w-8 h-8 flex  items-center justify-center  rounded-full bg-white/5 hover:bg-white/15 amd-send-icons-p text-yellow-500 text-md  rotate-[-30deg] "><p className=""><BiSolidSend/></p></button>
+            <button
+              onClick={() => {
+                setChat(true);
+              }}
+              className="w-8 h-8 flex  items-center justify-center  rounded-full bg-white/5 hover:bg-white/15 amd-send-icons-p text-yellow-500 text-md  rotate-[-30deg] "
+            >
+              <p className="">
+                <BiSolidSend />
+              </p>
+            </button>
           </div>
         </div>
       </div>
