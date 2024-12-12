@@ -10,7 +10,7 @@ const ProjectsPage = () => {
             <h2 className="logo text-2xl">Projects</h2>
           </div>
           <div className="ml-8 grid  space-y-6 text-slate-300 mt-10  pb-32">
-            <h1 className="text-red-500 font-bold  ">Using js libraries</h1>
+            <h1 className="text-slate-300 font-bold  ">Using js libraries</h1>
 
             <span className=" w-full">
               <p className="mb-3 font-semibold text-sky-500 flex   items-center gap-2 text-base ">
@@ -26,14 +26,14 @@ const ProjectsPage = () => {
                   and a contact form.
                 </span>
 
-                <span className="text-green-500">
+                <span className="">
                   Technologies Used: React.js , Tailwind CSS
                 </span>
 
                 <span>Your are currently in this Project page</span>
               </p>
             </span>
-            <span className="text-red-500 font-bold  mb-4">Future work </span>
+            <span className="text-slate-300 font-bold  mb-4">Future work </span>
             <span className=" w-full ">
               <p className="mb-3 font-semibold text-sky-500  text-base ">
                 2 . Musify
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
                   Includes features like responsive design , liked music ,
                   history.
                 </span>
-                <span className="text-green-500">
+                <span className="">
                   {" "}
                   Technologies Used: React.js , Tailwind CSS
                 </span>
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
                   Includes features like product filtering, user authentication,
                   and a shopping cart.
                 </span>
-                <span className="text-green-500">
+                <span className="">
                   {" "}
                   Technologies Used: React.js, Node.js, MongoDB
                 </span>
@@ -81,12 +81,12 @@ const ProjectsPage = () => {
                   application between users.
                 </span>
                 <span>Includes features like Group and personal chat.</span>
-                <span className="text-green-500">
+                <span className="">
                   Technologies Used: React.js, Node.js, MongoDB, API integration
                 </span>
               </p>
             </span>
-            <h1 className="text-red-500 font-bold text-base ">Using C </h1>
+            <h1 className="text-slate-300 font-bold text-base ">Using C </h1>
 
             <span className=" w-full ">
               <p className="mb-3 font-semibold text-sky-500  text-base">

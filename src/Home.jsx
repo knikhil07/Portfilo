@@ -156,7 +156,7 @@ const Home = () => {
                           </h1>
 
                           <div className="ml-8  grid space-y-6">
-                            <h1 className="text-red-500 font-bold text-base autoshow">
+                            <h1 className="text-slate-300 font-bold text-base autoshow">
                               Using js libraries
                             </h1>
                             <span className="autoshow w-full">
@@ -179,7 +179,7 @@ const Home = () => {
                                 </span>
                               </p>
                             </span>
-                            <h1 className="text-red-500 font-bold text-base autoshow">
+                            <h1 className="text-slate-300 font-bold text-base autoshow">
                               Future work{" "}
                             </h1>
                             <span className="autoshow w-full ">
@@ -242,7 +242,7 @@ const Home = () => {
                                 </span>
                               </p>
                             </span>
-                            <h1 className="text-red-500 font-bold text-base autoshow">
+                            <h1 className="text-slate-300 font-bold text-base autoshow">
                               Using C{" "}
                             </h1>
 
