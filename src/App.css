@@ -175,17 +175,3 @@
   perspective: 100px;
   animation: roatate 3s ease-in-out infinite;
 }
-@keyframes roatate {
-to{
-    transform: skewX(30deg) rotate(360deg) ;
-  }
-}
-.per{
-  perspective: 1000px;
-  transform: skewX(30deg);
-  animation: roatate 3s ease-in-out infinite;
-}
-.per div{
- 
-  transform: skewX(-30deg);
-}

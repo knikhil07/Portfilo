@@ -70,7 +70,7 @@ const Navbar = () => {
                       </span>
                     </li>
                     <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span className="">Blog</span>
+                      <span className=""onClick={()=>{nav("/blog")}}>Blog</span>
                     </li>
                   </ul>
                 </div>
@@ -110,7 +110,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a className="">Blog</a>
+                  <a className="" onClick={()=>{nav("/blog")}}>Blog</a>
                 </li>
               </ul>
             </div>

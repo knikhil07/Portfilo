@@ -16,15 +16,7 @@ const Loader = () => {
                     <div className="h-14 w-14 z-20  bg-sky-500  rounded-tl-[50%] rounded-bl-[50%]"></div>
                     <div className="h-20 w-20 z-20 bg-sky-500   rounded-tl-[50%] rounded-tr-[50%] rounded-br-[50%] "></div>
                   </div>
-                  <div className="h-48 w-48 rounded-full   absolute  per z-20 flex items-start">
-                    <div className="relative  ">
-                      <img
-                        src="src\Openai\satellite.png"
-                        alt=""
-                        className="h-10 w-10 ml-4"
-                      />
-                    </div>
-                  </div>
+                 
                 </div>
               </div>
             
