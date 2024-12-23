@@ -27,8 +27,8 @@ const Navbar = () => {
             </button>
 
             <div className={`${isNavMenu ? "" : "hidden"}   md:hidden`}>
-              <div className="fixed h-screen w-screen top-0 left-0 bg-black/30  backdrop-blur-md z-50">
-                <div className="fixed top-4 right-4 h-72 w-64 bg-slate-800 rounded-lg p-8 shadow-xl shadow-slate-900">
+              <div className="fixed h-screen w-screen top-0 left-0 bg-slate-950/60  backdrop-blur-xl z-50">
+                <div className="fixed top-4 right-4 w-60  bg-slate-800 rounded-lg p-12 shadow-xl shadow-slate-900/50">
                   <button
                     onClick={() => {
                       setNavMenu(!true);
@@ -69,9 +69,7 @@ const Navbar = () => {
                         Projects
                       </span>
                     </li>
-                    <li className="font-semibold text-slate-500 hover:text-sky-500">
-                      <span className=""onClick={()=>{nav("/blog")}}>Blog</span>
-                    </li>
+                   
                   </ul>
                 </div>
               </div>
@@ -109,9 +107,7 @@ const Navbar = () => {
                     Projects
                   </a>
                 </li>
-                <li className="font-semibold text-slate-500 hover:text-sky-500">
-                  <a className="" onClick={()=>{nav("/blog")}}>Blog</a>
-                </li>
+               
               </ul>
             </div>
             <button

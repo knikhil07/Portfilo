@@ -12,8 +12,8 @@ const Skills = () => {
       I am passionate about both Data Science and Full-Stack Web Development, and I constantly strive to learn and master new technologies in these fields.
     </p>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-       {/* Full-Stack Web Development Skills */}
-      <div className="bg-gray-900 p-6 rounded-lg shadow-md shadow-white/5 hover:scale-[1.02]">
+      
+      <div className="bg-slate-50/5 p-6 rounded-lg shadow-md shadow-white/5 hover:bg-slate-50/10">
         <h3 className="text-xl font-semibold text-sky-400 mb-4">
           Full-Stack Web Development Skills
         </h3>
@@ -26,8 +26,8 @@ const Skills = () => {
         </ul>
       </div>
 
-      {/* Data Science Skills */}
-      <div className="bg-gray-900 p-6 rounded-lg shadow-md shadow-white/5 hover:scale-[1.02]">
+     
+      <div className="bg-slate-50/5 p-6 rounded-lg shadow-md shadow-white/5 hover:bg-slate-50/10">
         <h3 className="text-xl font-semibold text-sky-400 mb-4">
           Data Science Skills
         </h3>
@@ -40,10 +40,8 @@ const Skills = () => {
         </ul>
       </div>
 
-     
-
-      {/* Tools & Technologies */}
-      <div className="bg-gray-900 p-6 rounded-lg shadow-md shadow-white/5 hover:scale-[1.02]">
+  
+      <div className="bg-slate-50/5 p-6 rounded-lg shadow-md shadow-white/5 hover:bg-slate-50/10">
         <h3 className="text-xl font-semibold text-sky-400 mb-4">
           Tools & Technologies
         </h3>
